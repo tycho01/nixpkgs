@@ -2625,6 +2625,8 @@ in
 
     libpinyin = libsForQt5.callPackage ../tools/inputmethods/fcitx-engines/fcitx-libpinyin { };
 
+    sogoupinyin = callPackage ../tools/inputmethods/fcitx-engines/fcitx-sogoupinyin { };
+
     skk = callPackage ../tools/inputmethods/fcitx-engines/fcitx-skk { };
   };
 
