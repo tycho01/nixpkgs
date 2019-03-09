@@ -24,7 +24,7 @@ let
       throw "Mathematica requires i686-linux or x86_64 linux";
 in
 stdenv.mkDerivation rec {
-  version = "10.0.2";
+  version = "10.0.3";
 
   name = "mathematica-${version}";
 
