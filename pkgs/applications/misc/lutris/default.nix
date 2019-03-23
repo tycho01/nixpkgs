@@ -113,7 +113,7 @@ let
 
   lutris = python3Packages.buildPythonApplication rec {
     name = "lutris-${version}";
-    version = "v0.4.18";
+    version = "v0.5.1";
 
     src = fetchFromGitHub {
       owner = "lutris";
