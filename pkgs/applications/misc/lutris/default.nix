@@ -119,13 +119,13 @@ let
       owner = "lutris";
       repo = "lutris";
       rev = version;
-      sha256 = "1pgvk3qaaph1dlkrc5cq2jifr3yqlhnqsfa0wkaqzssh9acd5q9b";
+      sha256 = "1cv0bbkhgn7x0g0w0nvkk2l8824qxaykz3zcv8f3ym4glvggnhf2";
     };
 
-    patches = [(fetchpatch {
-      url = "https://github.com/lutris/lutris/commit/403a83e18690511cb723f883254c86081870f050.patch";
-      sha256 = "1zc45jgaqvpqgr6f9mkqzcwx48lffrjkp7zfk0fz4l2a05jim6hm";
-    })];
+    # patches = [(fetchpatch {
+    #   url = "https://github.com/lutris/lutris/commit/403a83e18690511cb723f883254c86081870f050.patch";
+    #   sha256 = "1zc45jgaqvpqgr6f9mkqzcwx48lffrjkp7zfk0fz4l2a05jim6hm";
+    # })];
 
     enableParallelBuilding = true;
     nativeBuildInputs = [ wrapGAppsHook ];
