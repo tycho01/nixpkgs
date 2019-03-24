@@ -8,7 +8,7 @@ let
   python2Deps = with pkgs; with python2Packages; [ pygtk ];
 
   python3Deps = with pkgs; with python3Packages; [
-    evdev pyyaml pyxdg pygobject3 pyqt5 dbus-python
+    evdev pyyaml pyxdg pygobject3 pyqt5 dbus-python requests
   ];
 
   xorgDeps = with pkgs; with xorg; [
@@ -30,7 +30,8 @@ let
     libjack2 libsamplerate libzip libmad libaio libcap libtiff libva libgphoto2
     libxslt libtxc_dxtn libsndfile giflib zlib glib alsaLib zziplib bash dbus
     keyutils zip cabextract freetype unzip coreutils readline gcc SDL SDL2 curl
-    graphite2 gtk2 gtk3 udev ncurses wayland python3Packages.requests
+    graphite2 gtk2 gtk3 udev ncurses wayland
+    libgnome-keyring
 
     # Lutris
     gobjectIntrospection gdk_pixbuf pango openssl sqlite xterm
